@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Permanent+Marker&display=swap');
+@keyframes tilt {
+    50% {
+        transform: rotate(5deg);
+    }
+}
 
 body {
     background-image: url('https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3149&q=80');
@@ -52,6 +57,11 @@ body {
     font-size: 100%;
     text-align: center;
     
+}
+
+.item:hover {
+    animation-name: tilt;
+    animation-duration: 1s;
 }
 
 .item.completed {

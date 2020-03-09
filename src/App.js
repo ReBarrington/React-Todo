@@ -2,12 +2,14 @@ import React from 'react';
 import ToDoForm from "./components/TodoForm";
 import ToDoList from "./components/TodoList";
 
+const todos = [{name: 'Type above to add a new note! Clicking a note when you have completed a task, then use the button below to clear.' }]
+
 class App extends React.Component {
   // you will need a place to store your state in this component.
   constructor() {
     super();
     this.state = {
-      todos: [''],
+      todos: todos,
       name: ''
     }
   }
@@ -51,7 +53,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <h1>Welcome to your To-do App!</h1>
+        <h1>My To-Do List:</h1>
         <ToDoForm addItem={this.addItem}/>
         <ToDoList todos={this.state.todos} toggleItem={this.toggleItem} clearCompleted={this.clearCompleted}/>
       </div>
