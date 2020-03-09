@@ -13,7 +13,7 @@ body {
     align-items: center;
     border: 4px black solid;
     margin: 20%;
-    padding: 200px 0px 200px 0px;
+    padding: 5%;
 }
 
 .app h1 {
@@ -26,12 +26,12 @@ body {
     margin: 5%;
 }
 
-/* .to-do-list-container {
+.to-do-list-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} */
+}
 
 .todo-list {
     display: flex;
@@ -49,6 +49,7 @@ body {
     margin: 10px;
     box-shadow: 10px 10px 5px black;
     font-family: 'Architects Daughter', cursive;
+    font-size: 100%;
     text-align: center;
     
 }
