@@ -26,6 +26,13 @@ body {
     margin: 5%;
 }
 
+/* .to-do-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
 .todo-list {
     display: flex;
     flex-wrap: wrap;
@@ -34,17 +41,12 @@ body {
     align-items: stretch;
 }
 
-.todo-list button {
-    width: 50%;
-    height: 20%;
-}
-
 .item {
     background-color: #FFFF66;
-    width: 25%;
+    width: 200px;
     height: 0;
-    padding-bottom: 25%;
-    margin: 20px;
+    padding-bottom: 200px;
+    margin: 10px;
     box-shadow: 10px 10px 5px black;
     font-family: 'Architects Daughter', cursive;
     text-align: center;
